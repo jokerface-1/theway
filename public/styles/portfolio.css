@@ -1,0 +1,124 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-image: url("../images/V1-BLUE-NIGHT-FOREST-1920x1080.webp");
+    background-repeat: no-repeat;
+}
+.heading{
+    display: flex;
+    font-size: 50px;
+    margin-left: 40%;
+    text-indent: 10px;
+    animation-name: wabble;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    transition: linear;
+    transition-delay: 2s;
+    font-style: italic;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    color:  rgb(216, 205, 205);;
+}
+@keyframes wabble {
+    0%{
+        font-style: italic;
+        text-indent: 10px;
+        text-transform: lowercase;
+    }
+    25%{
+        font-style: normal;
+        text-indent: 5px;
+    }
+    50%{
+        font-style: oblique;
+        text-indent: 12px;
+    }
+    100%{
+        font-style: italic;
+        text-indent: 10px;
+    }
+    
+}
+
+
+.infos{
+    display: flex;
+    margin-top: 10px;
+    font-size: 50px;
+    padding: 20px;
+    color: rgb(216, 205, 205);;
+}
+.name{
+    margin-left: 50%;
+    text-transform: capitalize;
+}
+.card{
+    margin-left: 40%;
+    background: transparent;
+    color: rgb(168, 125, 68);
+    font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url("../images/900w-LqZ8gkhsXXE.webp");
+        background-repeat: no-repeat;
+    }
+    .heading{
+        display: flex;
+        font-size: 50px;
+        margin-left: 50px;
+        text-indent: 10px;
+        animation-name: wabble;
+        animation-delay: 2s;
+        animation-duration: 2s;
+        transition: linear;
+        transition-delay: 2s;
+        font-style: italic;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 2;
+        color: rgba(156, 107, 43, 0.863);;
+    }
+    @keyframes wabble {
+        0%{
+            font-style: italic;
+            text-indent: 10px;
+            text-transform: lowercase;
+        }
+        25%{
+            font-style: normal;
+            text-indent: 5px;
+        }
+        50%{
+            font-style: oblique;
+            text-indent: 12px;
+        }
+        100%{
+            font-style: italic;
+            text-indent: 10px;
+        }
+        
+    }
+    
+    
+    .infos{
+        display: flex;
+        margin-top: 10px;
+        font-size: 50px;
+        padding: 20px;
+        color:rgba(156, 107, 43, 0.863);;
+    }
+    .name{
+        margin-left: 100px;
+        text-transform: capitalize;
+    }
+    .card{
+        margin-left: 20px;
+        background: transparent;
+        color:rgba(156, 107, 43, 0.863);;
+    }
+}
